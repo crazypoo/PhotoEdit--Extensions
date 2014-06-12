@@ -13,6 +13,9 @@
 		CCA9B67419499B250083D534 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCA9B67219499B250083D534 /* Main.storyboard */; };
 		CCA9B67619499B250083D534 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA9B67519499B250083D534 /* Images.xcassets */; };
 		CCA9B68219499B250083D534 /* PhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA9B68119499B250083D534 /* PhotoTests.m */; };
+		CCA9B6C519499C610083D534 /* ActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA9B6C419499C610083D534 /* ActionViewController.m */; };
+		CCA9B6C719499C610083D534 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCA9B6C619499C610083D534 /* MainInterface.storyboard */; };
+		CCA9B6CA19499C610083D534 /* com.crazykidhao.Photo.PhotoEdited.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CCA9B6BF19499C610083D534 /* com.crazykidhao.Photo.PhotoEdited.appex */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +26,35 @@
 			remoteGlobalIDString = CCA9B66419499B240083D534;
 			remoteInfo = Photo;
 		};
+		CCA9B6C819499C610083D534 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCA9B65D19499B240083D534 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCA9B6BE19499C610083D534;
+			remoteInfo = PhotoEdited;
+		};
+		CCA9B6CB19499C610083D534 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCA9B65D19499B240083D534 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCA9B6BE19499C610083D534;
+			remoteInfo = PhotoEdited;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CCA9B6A519499B4E0083D534 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CCA9B6CA19499C610083D534 /* com.crazykidhao.Photo.PhotoEdited.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CCA9B66519499B240083D534 /* Photo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +69,13 @@
 		CCA9B67B19499B250083D534 /* PhotoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA9B68019499B250083D534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCA9B68119499B250083D534 /* PhotoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoTests.m; sourceTree = "<group>"; };
+		CCA9B69119499B4E0083D534 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		CCA9B69319499B4E0083D534 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		CCA9B6BF19499C610083D534 /* com.crazykidhao.Photo.PhotoEdited.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = com.crazykidhao.Photo.PhotoEdited.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCA9B6C219499C610083D534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCA9B6C319499C610083D534 /* ActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionViewController.h; sourceTree = "<group>"; };
+		CCA9B6C419499C610083D534 /* ActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionViewController.m; sourceTree = "<group>"; };
+		CCA9B6C619499C610083D534 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +93,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CCA9B6BC19499C610083D534 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -63,6 +108,8 @@
 			children = (
 				CCA9B66719499B240083D534 /* Photo */,
 				CCA9B67E19499B250083D534 /* PhotoTests */,
+				CCA9B6C019499C610083D534 /* PhotoEdited */,
+				CCA9B69019499B4E0083D534 /* Frameworks */,
 				CCA9B66619499B240083D534 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +119,7 @@
 			children = (
 				CCA9B66519499B240083D534 /* Photo.app */,
 				CCA9B67B19499B250083D534 /* PhotoTests.xctest */,
+				CCA9B6BF19499C610083D534 /* com.crazykidhao.Photo.PhotoEdited.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,6 +164,34 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CCA9B69019499B4E0083D534 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCA9B69119499B4E0083D534 /* PhotosUI.framework */,
+				CCA9B69319499B4E0083D534 /* Photos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCA9B6C019499C610083D534 /* PhotoEdited */ = {
+			isa = PBXGroup;
+			children = (
+				CCA9B6C319499C610083D534 /* ActionViewController.h */,
+				CCA9B6C419499C610083D534 /* ActionViewController.m */,
+				CCA9B6C619499C610083D534 /* MainInterface.storyboard */,
+				CCA9B6C119499C610083D534 /* Supporting Files */,
+			);
+			path = PhotoEdited;
+			sourceTree = "<group>";
+		};
+		CCA9B6C119499C610083D534 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCA9B6C219499C610083D534 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,10 +202,13 @@
 				CCA9B66119499B240083D534 /* Sources */,
 				CCA9B66219499B240083D534 /* Frameworks */,
 				CCA9B66319499B240083D534 /* Resources */,
+				CCA9B6A519499B4E0083D534 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CCA9B6C919499C610083D534 /* PBXTargetDependency */,
+				CCA9B6CC19499C610083D534 /* PBXTargetDependency */,
 			);
 			name = Photo;
 			productName = Photo;
@@ -154,6 +233,23 @@
 			productReference = CCA9B67B19499B250083D534 /* PhotoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		CCA9B6BE19499C610083D534 /* PhotoEdited */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCA9B6CD19499C610083D534 /* Build configuration list for PBXNativeTarget "PhotoEdited" */;
+			buildPhases = (
+				CCA9B6BB19499C610083D534 /* Sources */,
+				CCA9B6BC19499C610083D534 /* Frameworks */,
+				CCA9B6BD19499C610083D534 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoEdited;
+			productName = PhotoEdited;
+			productReference = CCA9B6BF19499C610083D534 /* com.crazykidhao.Photo.PhotoEdited.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -169,6 +265,9 @@
 					CCA9B67A19499B250083D534 = {
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = CCA9B66419499B240083D534;
+					};
+					CCA9B6BE19499C610083D534 = {
+						CreatedOnToolsVersion = 6.0;
 					};
 				};
 			};
@@ -187,6 +286,7 @@
 			targets = (
 				CCA9B66419499B240083D534 /* Photo */,
 				CCA9B67A19499B250083D534 /* PhotoTests */,
+				CCA9B6BE19499C610083D534 /* PhotoEdited */,
 			);
 		};
 /* End PBXProject section */
@@ -205,6 +305,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA9B6BD19499C610083D534 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCA9B6C719499C610083D534 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +337,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CCA9B6BB19499C610083D534 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCA9B6C519499C610083D534 /* ActionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -236,6 +352,16 @@
 			isa = PBXTargetDependency;
 			target = CCA9B66419499B240083D534 /* Photo */;
 			targetProxy = CCA9B67C19499B250083D534 /* PBXContainerItemProxy */;
+		};
+		CCA9B6C919499C610083D534 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCA9B6BE19499C610083D534 /* PhotoEdited */;
+			targetProxy = CCA9B6C819499C610083D534 /* PBXContainerItemProxy */;
+		};
+		CCA9B6CC19499C610083D534 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCA9B6BE19499C610083D534 /* PhotoEdited */;
+			targetProxy = CCA9B6CB19499C610083D534 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -334,9 +460,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: JIEHAO DENG (RYR2KG82CG)";
 				INFOPLIST_FILE = Photo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -345,9 +473,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: JIEHAO DENG (RYR2KG82CG)";
 				INFOPLIST_FILE = Photo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -387,6 +517,34 @@
 			};
 			name = Release;
 		};
+		CCA9B6CE19499C610083D534 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: JIEHAO DENG (RYR2KG82CG)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PhotoEdited/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "com.crazykidhao.Photo.$(TARGET_NAME:rfc1034identifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CCA9B6CF19499C610083D534 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: JIEHAO DENG (RYR2KG82CG)";
+				INFOPLIST_FILE = PhotoEdited/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "com.crazykidhao.Photo.$(TARGET_NAME:rfc1034identifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -406,6 +564,7 @@
 				CCA9B68719499B250083D534 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCA9B68819499B250083D534 /* Build configuration list for PBXNativeTarget "PhotoTests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +573,16 @@
 				CCA9B68A19499B250083D534 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCA9B6CD19499C610083D534 /* Build configuration list for PBXNativeTarget "PhotoEdited" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCA9B6CE19499C610083D534 /* Debug */,
+				CCA9B6CF19499C610083D534 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
